@@ -100,6 +100,30 @@
       margin-top: 3rem;
     }
 
+    details {
+      margin: 1rem 0;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1.2rem;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary h3 {
+      display: inline;
+      color: #0044cc;
+    }
+
+    details[open] summary h3 {
+      color: #cc0033;
+    }
+
     @media screen and (max-width: 600px) {
       nav { flex-direction: column; }
       nav label { text-align: center; padding: 1rem; }
@@ -108,17 +132,16 @@
 </head>
 <body>
 
-  <!-- Imagen superior -->
+  
   <div class="banner">
     <img src="leo messi.jpg" />
   </div>
 
-  <!-- Header -->
+  
   <header>
     <h1>Lionel Messi - Carrera y Logros</h1>
   </header>
 
-  <!-- Navegación -->
   <input type="radio" name="menu" id="inicio" checked>
   <input type="radio" name="menu" id="trayectoria">
   <input type="radio" name="menu" id="titulos">
@@ -129,16 +152,16 @@
     <label for="titulos">Títulos</label>
   </nav>
 
-  <!-- INICIO -->
+
   <section class="content-section inicio">
     <h2>Inicio de su carrera</h2>
     <p>Lionel Messi nació en Rosario, Argentina, en 1987. Desde pequeño mostró un talento excepcional para el fútbol. A los 13 años fue fichado por el FC Barcelona, donde inició su camino hacia la grandeza.</p>
-    <p>marco la gran cantidad de 865 goles oficiales y 386 asistencias</p>
-    <p>ha ganado 46 titulos colectivamente e individualmente ha ganadon 79 trofeos siendo el maximo ganador de totales titulos</p>
+    <p>marcó la gran cantidad de 865 goles oficiales y 386 asistencias</p>
+    <p>ha ganado 46 títulos colectivamente e individualmente ha ganado 79 trofeos siendo el máximo ganador de títulos totales</p>
     <img src="leo messsi juvenil.jpg"/>
   </section>
 
-  <!-- TRAYECTORIA -->
+
   <section class="content-section trayectoria">
     <h2>Trayectoria en equipos</h2>
 
@@ -159,53 +182,59 @@
     <img src="Messi en Argentina.avif">
   </section>
 
-  <!-- TÍTULOS -->
+  
   <section class="content-section titulos">
     <h2>Títulos ganados</h2>
 
-    <h3>🏆 Títulos colectivos</h3>
-    <ul>
-      <li>Champions League (x4) 
-        <img src="Champions.webp">
-      </li>
-      <li>Ligas de España (x10) 
-        <img src="Liga Española.avif">
-      </li>
-      <li>Copa del Rey (x7) 
-        <img src="Copa del Rey.jpg">
-      </li>
-      <li>Ligue 1 (x2) 
-        <img src="Ligue 1.jpg">
-      </li>
-      <li>Leagues Cup 
-        <img src="Leagues Cup.jpg">
-      </li>
-      <li>Copa América 2021 
-        <img src="Copa América.webp">
-      </li>
-      <li>Mundial Catar 2022 
-        <img src="Copa Mundial.webp">
-      </li>
-    </ul>
+  
+    <details>
+      <summary><h3>🏆 Títulos colectivos</h3></summary>
+      <ul>
+        <li>Champions League (x4) 
+          <img src="Champions.webp">
+        </li>
+        <li>Ligas de España (x10) 
+          <img src="Liga Española.avif">
+        </li>
+        <li>Copa del Rey (x7) 
+          <img src="Copa del Rey.jpg">
+        </li>
+        <li>Ligue 1 (x2) 
+          <img src="Ligue 1.jpg">
+        </li>
+        <li>Leagues Cup 
+          <img src="Leagues Cup.jpg">
+        </li>
+        <li>Copa América 2021 
+          <img src="Copa América.webp">
+        </li>
+        <li>Mundial Catar 2022 
+          <img src="Copa Mundial.webp">
+        </li>
+      </ul>
+    </details>
 
-    <h3>🌟 Títulos individuales</h3>
-    <ul>
-      <li>Balón de Oro (x8) 
-        <img src="Balón de Oro.jpg">
-      </li>
-      <li>Bota de Oro (x6) 
-        <img src="Bota de Oro.webp">
-      </li>
-      <li>Mejor jugador del Mundial (2014, 2022) 
-        <img src="Mejor del Mundial.jpg">
-      </li>
-      <li>Máximo goleador histórico del FC Barcelona 
-        <img src="goles es Barcelona.webp">
-      </li>
-      <li>Máximo goleador histórico de Argentina 
-        <img src="goles en argentina.png">
-      </li>
-    </ul>
+    
+    <details>
+      <summary><h3>🌟 Títulos individuales</h3></summary>
+      <ul>
+        <li>Balón de Oro (x8) 
+          <img src="Balón de Oro.jpg">
+        </li>
+        <li>Bota de Oro (x6) 
+          <img src="Bota de Oro.webp">
+        </li>
+        <li>Mejor jugador del Mundial (2014, 2022) 
+          <img src="Mejor del Mundial.jpg">
+        </li>
+        <li>Máximo goleador histórico del FC Barcelona 
+          <img src="goles es Barcelona.webp">
+        </li>
+        <li>Máximo goleador histórico de Argentina 
+          <img src="goles en argentina.png">
+        </li>
+      </ul>
+    </details>
   </section>
 
   <footer>
