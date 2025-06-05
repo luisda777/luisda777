@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lionel Messi - Carrera y Logros</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0044cc, #cc0033);
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    nav {
+      background: #002266;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav label {
+      color: white;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav label:hover, nav label.active {
+      background: #cc0033;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .content-section {
+      display: none;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #inicio:checked ~ .inicio,
+    #trayectoria:checked ~ .trayectoria,
+    #titulos:checked ~ .titulos {
+      display: block;
+    }
+
+    h2 {
+      color: #cc0033;
+      border-left: 5px solid #0044cc;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .club img, .inicio img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .titulos img {
+      width: 150px;
+      height: auto;
+      margin: 10px 10px 20px 0;
+      border-radius: 10px;
+      vertical-align: middle;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      background: #002244;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav { flex-direction: column; }
+      nav label { text-align: center; padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Imagen superior -->
+  <div class="banner">
+    <img src="leo messi.jpg" />
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Lionel Messi - Carrera y Logros</h1>
+  </header>
+
+  <!-- Navegación -->
+  <input type="radio" name="menu" id="inicio" checked>
+  <input type="radio" name="menu" id="trayectoria">
+  <input type="radio" name="menu" id="titulos">
+
+  <nav>
+    <label for="inicio">Inicio</label>      
+    <label for="trayectoria">Trayectoria</label>
+    <label for="titulos">Títulos</label>
+  </nav>
+
+  <!-- INICIO -->
+  <section class="content-section inicio">
+    <h2>Inicio de su carrera</h2>
+    <p>Lionel Messi nació en Rosario, Argentina, en 1987. Desde pequeño mostró un talento excepcional para el fútbol. A los 13 años fue fichado por el FC Barcelona, donde inició su camino hacia la grandeza.</p>
+    <p>marco la gran cantidad de 865 goles oficiales y 386 asistencias</p>
+    <p>ha ganado 46 titulos colectivamente e individualmente ha ganadon 79 trofeos siendo el maximo ganador de totales titulos</p>
+    <img src="leo messsi juvenil.jpg"/>
+  </section>
+
+  <!-- TRAYECTORIA -->
+  <section class="content-section trayectoria">
+    <h2>Trayectoria en equipos</h2>
+
+    <h3>FC Barcelona (2004–2021)</h3>
+    <p>El club donde hizo historia, ganando todos los títulos posibles.</p>
+    <img src="Messi en Barcelona.webp">
+
+    <h3>Paris Saint-Germain (2021–2023)</h3>
+    <p>En Francia, sumó más experiencia y títulos nacionales.</p>
+    <img src="Messi en PSG.webp">
+
+    <h3>Inter Miami (2023–actualidad)</h3>
+    <p>Actualmente juega en la MLS, llevando el fútbol a otro nivel en EE.UU.</p>
+    <img src="Messi en Inter Miami.png">
+
+    <h3>Selección Argentina</h3>
+    <p>Campeón mundial y referente absoluto de su país.</p>
+    <img src="Messi en Argentina.avif">
+  </section>
+
+  <!-- TÍTULOS -->
+  <section class="content-section titulos">
+    <h2>Títulos ganados</h2>
+
+    <h3>🏆 Títulos colectivos</h3>
+    <ul>
+      <li>Champions League (x4) 
+        <img src="Champions.webp">
+      </li>
+      <li>Ligas de España (x10) 
+        <img src="Liga Española.avif">
+      </li>
+      <li>Copa del Rey (x7) 
+        <img src="Copa del Rey.jpg">
+      </li>
+      <li>Ligue 1 (x2) 
+        <img src="Ligue 1.jpg">
+      </li>
+      <li>Leagues Cup 
+        <img src="Leagues Cup.jpg">
+      </li>
+      <li>Copa América 2021 
+        <img src="Copa América.webp">
+      </li>
+      <li>Mundial Catar 2022 
+        <img src="Copa Mundial.webp">
+      </li>
+    </ul>
+
+    <h3>🌟 Títulos individuales</h3>
+    <ul>
+      <li>Balón de Oro (x8) 
+        <img src="Balón de Oro.jpg">
+      </li>
+      <li>Bota de Oro (x6) 
+        <img src="Bota de Oro.webp">
+      </li>
+      <li>Mejor jugador del Mundial (2014, 2022) 
+        <img src="Mejor del Mundial.jpg">
+      </li>
+      <li>Máximo goleador histórico del FC Barcelona 
+        <img src="goles es Barcelona.webp">
+      </li>
+      <li>Máximo goleador histórico de Argentina 
+        <img src="goles en argentina.png">
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Proyecto educativo sobre Lionel Messi</p>
+  </footer>
+</body>
+</html>
+
